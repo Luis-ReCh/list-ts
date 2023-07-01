@@ -4,7 +4,7 @@ export default function List() {
       <h1 className="text-center">Mis cosas por Hacer</h1>
       <form action="" className="d-flex">
         <input className="form-control" type="search" />
-        <button class="btn btn-outline-success" type="submit">
+        <button className="btn btn-outline-success" type="submit">
           +
         </button>
       </form>
@@ -21,7 +21,7 @@ export default function List() {
             <td>comer</td>
 
             <td>
-              <button type="button" class="btn btn-danger">
+              <button type="button" className="btn btn-danger">
                 Delete
               </button>
             </td>
@@ -30,7 +30,7 @@ export default function List() {
             <td>correr</td>
 
             <td>
-              <button type="button" class="btn btn-danger">
+              <button type="button" className="btn btn-danger">
                 Delete
               </button>
             </td>
@@ -39,7 +39,7 @@ export default function List() {
             <td>llorar</td>
 
             <td>
-              <button type="button" class="btn btn-danger">
+              <button type="button" className="btn btn-danger">
                 Delete
               </button>
             </td>
@@ -48,7 +48,7 @@ export default function List() {
             <td>bailar</td>
 
             <td>
-              <button type="button" class="btn btn-danger">
+              <button type="button" className="btn btn-danger">
                 Delete
               </button>
             </td>
@@ -57,7 +57,7 @@ export default function List() {
             <td>ver la tv</td>
 
             <td>
-              <button type="button" class="btn btn-danger">
+              <button type="button" className="btn btn-danger">
                 Delete
               </button>
             </td>
@@ -66,7 +66,7 @@ export default function List() {
             <td>salir a pasear</td>
 
             <td>
-              <button type="button" class="btn btn-danger">
+              <button type="button" className="btn btn-danger">
                 Delete
               </button>
             </td>
@@ -74,14 +74,14 @@ export default function List() {
           <tr>
             <td>beber una serveza o 2</td>
             <td>
-              <button type="button" class="btn btn-danger">
+              <button type="button" className="btn btn-danger">
                 Delete
               </button>
             </td>
           </tr>
         </tbody>
       </table>
-      <button type="button" class="btn btn-success">
+      <button type="button" className="btn btn-success">
         Borrar todo
       </button>
     </div>
