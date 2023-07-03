@@ -10,6 +10,12 @@ export default function App() {
     setText(""); // vaciamos el setTexts para que el input no traiga nada
   }
 
+  function onEnter(event: React.KeyboardEvent<HTMLInputElement>) {
+    if (event.key === "Enter") {
+      onAddItem();
+    }
+  }
+
   function onDelete(deleteIndex: number) {
     tasks.splice(deleteIndex, 1);
     setTasks([...tasks]);
@@ -21,13 +27,14 @@ export default function App() {
   return (
     <div className="container pt-4">
       <h1 className="text-center">Mis cosas por Hacer</h1>
-      <form action="" className="d-flex mb-3">
+      <section className="d-flex mb-3">
         <input
           className="form-control"
           type="text"
           id="text"
           name="text"
           onChange={(event) => setText(event.target.value)} //capturamos el valor el input
+          onKeyUp={onEnter}
           value={text}
         />
         <button
@@ -37,7 +44,7 @@ export default function App() {
         >
           +
         </button>
-      </form>
+      </section>
       <table className="table table-striped">
         <tbody>
           {tasks.map((task, index) => {
